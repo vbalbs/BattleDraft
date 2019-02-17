@@ -5,10 +5,10 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     devtool: 'source-map',
-    entry: "./src/index.js",
+    entry: "./src/index.jsx",
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: "index_bundle.js"
+        filename: "bundle.js"
     },
     module: {
         rules: [{
@@ -33,7 +33,7 @@ module.exports = {
             test: /\.(png|jpg|gif)$/,
             use: [
                 {
-                    loader: 'file-loader'
+                    loader: 'url-loader',
                 }
             ]
         }
