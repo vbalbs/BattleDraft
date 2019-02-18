@@ -10,7 +10,7 @@ export default class DraftCreator extends React.Component {
         return (
             <Container>
                 <Row className="container-row">
-                    <Col>
+                    <Col md={{ span: 6, offset: 3 }}>
                         <Image className="container-row-title" src={logo}  alt="Logo"/>                   
                         <DraftForm />
                     </Col>
