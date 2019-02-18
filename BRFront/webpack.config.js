@@ -20,15 +20,17 @@ module.exports = {
                     presets: ['@babel/preset-react']
                 }
             }
-        }, {
+        }, 
+        {
             test: /\.(css|scss)$/,
-            use: ExtractTextPlugin.extract(
-                {
-                    fallback: 'style-loader',
-                    use: ['css-loader']
-                }
-            )
-        },
+            exclude: /node_modules/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+          },
+          {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader?modules',
+            include: /flexboxgrid/
+          },
         {
             test: /\.(png|jpg|gif)$/,
             use: [
@@ -48,6 +50,6 @@ module.exports = {
             filename: "index.html",  //target html
             template: "./src/index.html" //source html
         }),
-        new ExtractTextPlugin({ filename: 'css/style.css' })
+        new ExtractTextPlugin({ filename: 'css/style.scss' })
     ]
 }

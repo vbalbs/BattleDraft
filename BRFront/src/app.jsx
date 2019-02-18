@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import DraftCreator from './components/DraftCreator/DraftCreator';
 
 class App extends Component {
     render() {
-        return (<h1>BattleDraft</h1>)
+        return (
+            <DraftCreator />
+        );
     }
 }
 
