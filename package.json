@@ -1,0 +1,25 @@
+{
+  "name": "BattleDraft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbalbs/BattleDraft.git"
+  },
+  "keywords": [],
+  "author": "Raphael Mobis <r.mobis@gmail.com> (github.com/rmobis)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vbalbs/BattleDraft/issues"
+  },
+  "homepage": "https://github.com/vbalbs/BattleDraft#readme"
+}
