@@ -1,0 +1,15 @@
+.draft-form {
+    text-align: center;
+    .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(92, 168, 71, .5);
+    }
+    .confirm-button {
+        border-radius: 40px;
+        padding: 10px 20px;
+        font-size: 23px;
+    }
+}
+.form-check-inline{
+    color: white;
+    font-size: 22px;
+}
